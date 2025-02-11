@@ -1,14 +1,13 @@
-/* Set the background color to match the header */
+
 body {
-  background-color: #f8f1e6; /* Same color as header */
-  margin: 0; /* Removes default browser margins */
+  background-color: #f8f1e6; 
+  margin: 0; 
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centers everything */
+  align-items: center;
 }
 
 
-/* Import Flame Bold font (if available) */
 @font-face {
   font-family: "Flame Bold";
   src: url("https://your-font-url.com/FlameBold.woff2") format("woff2"),
@@ -17,12 +16,12 @@ body {
   font-style: normal;
 }
 
-/* Fallback font */
+
 body {
   font-family: "Flame Bold", "Cooper Black", "Arial", sans-serif;
 }
 
-/* Header container */
+
 .header {
   position: fixed;
   top: 0;
@@ -38,24 +37,20 @@ body {
   box-sizing: border-box;
 }
 
-/* Add margin to the body so content doesn't hide under the fixed header */
 body {
   margin-top: 70px;
 }
 
-/* Logo */
 .logo img {
   height: 40px;
 }
 
-/* Navigation container */
 .nav-container {
   display: flex;
   align-items: center;
-  gap: 20px; /* Ensures space between links and button */
+  gap: 20px; 
 }
 
-/* Navigation links */
 .nav-links {
   display: flex;
   gap: 25px;
@@ -74,7 +69,7 @@ body {
   color: #d35400;
 }
 
-/* Order Now Button */
+
 .order-button {
   background-color: #d32f2f;
   color: white;
@@ -90,27 +85,27 @@ body {
   background-color: #b71c1c;
 }
 
-/* Prevents button from overlapping the side */
+
 .nav-container {
-  padding-right: 20px; /* Adds spacing from the right edge */
+  padding-right: 20px; 
 }
 
-/* Whopper Image Container */
+
 .whopper {
   display: flex;
-  justify-content: center; /* Centers the image horizontally */
-  align-items: center; /* Centers the image vertically */
-  height: 80vh; /* Makes it take up most of the viewport height */
-  width: 100%; /* Ensures it takes the full width */
+  justify-content: center; 
+  align-items: center; 
+  height: 80vh;
+  width: 100%; 
 }
 
-/* Whopper Image */
+
 .whopper img {
-  width: 100%; /* Make it take up more space */
-  max-width: 1100px; /* Increase max size */
-  border-radius: 25px; /* Keep rounded corners */
-  display: block; /* Proper alignment */
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Adds depth */
+  width: 100%;
+  max-width: 1100px; 
+  border-radius: 25px; 
+  display: block; 
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); 
 }
 
 .welcometext {
