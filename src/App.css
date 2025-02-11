@@ -1,0 +1,369 @@
+/* Set the background color to match the header */
+body {
+  background-color: #f8f1e6; /* Same color as header */
+  margin: 0; /* Removes default browser margins */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers everything */
+}
+
+
+/* Import Flame Bold font (if available) */
+@font-face {
+  font-family: "Flame Bold";
+  src: url("https://your-font-url.com/FlameBold.woff2") format("woff2"),
+       url("https://your-font-url.com/FlameBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Fallback font */
+body {
+  font-family: "Flame Bold", "Cooper Black", "Arial", sans-serif;
+}
+
+/* Header container */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8f1e6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* Add margin to the body so content doesn't hide under the fixed header */
+body {
+  margin-top: 70px;
+}
+
+/* Logo */
+.logo img {
+  height: 40px;
+}
+
+/* Navigation container */
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Ensures space between links and button */
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Flame Bold", "Cooper Black", "Arial", sans-serif;
+  color: #5a2d0c;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #d35400;
+}
+
+/* Order Now Button */
+.order-button {
+  background-color: #d32f2f;
+  color: white;
+  font-weight: bold;
+  font-family: "Flame Bold", "Cooper Black", "Arial", sans-serif;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.order-button:hover {
+  background-color: #b71c1c;
+}
+
+/* Prevents button from overlapping the side */
+.nav-container {
+  padding-right: 20px; /* Adds spacing from the right edge */
+}
+
+/* Whopper Image Container */
+.whopper {
+  display: flex;
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center; /* Centers the image vertically */
+  height: 80vh; /* Makes it take up most of the viewport height */
+  width: 100%; /* Ensures it takes the full width */
+}
+
+/* Whopper Image */
+.whopper img {
+  width: 100%; /* Make it take up more space */
+  max-width: 1100px; /* Increase max size */
+  border-radius: 25px; /* Keep rounded corners */
+  display: block; /* Proper alignment */
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Adds depth */
+}
+
+.welcometext {
+  justify-content: center; 
+  align-items: center; 
+  margin-top: -100px;
+}
+
+.welcometext h2 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 35px;
+  font-family: "Flame Bold", "Cooper Black", "Arial", sans-serif;
+  color: #5a2d0c;
+}
+
+.welcometext p {
+  color: #5a2d0c;
+  text-align: center;
+}
+
+.featured {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f1e6;
+  padding: 20px;
+  width: 100%;
+}
+
+.featured-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+}
+
+.featured-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #5a2d0c;
+}
+
+.view-all {
+  font-size: 16px;
+  font-weight: bold;
+  color: #d32f2f;
+  text-decoration: none;
+}
+
+.view-all:hover {
+  color: #b71c1c;
+}
+
+.featured-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.featured-card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.featured-image {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 8px;
+}
+
+.featured-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #5a2d0c;
+  margin-top: 10px;
+}
+
+.order-button {
+  background-color: #d32f2f;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.order-button:hover {
+  background-color: #b71c1c;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fdf4e5;
+  padding: 20px;
+  width: 100%;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+}
+
+.menu-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #5a2d0c;
+}
+
+.view-all {
+  font-size: 16px;
+  font-weight: bold;
+  color: #d32f2f;
+  text-decoration: none;
+}
+
+.view-all:hover {
+  color: #b71c1c;
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-card-top {
+  background: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-image {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 8px;
+}
+
+.menu-card-bottom {
+  background: #d32f2f;
+  padding: 15px;
+}
+
+.menu-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+.offers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 30px;
+  width: 100%;
+}
+
+.offers-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+}
+
+.offers-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #5a2d0c;
+}
+
+.view-all {
+  font-size: 16px;
+  font-weight: bold;
+  color: #d32f2f;
+  text-decoration: none;
+}
+
+.view-all:hover {
+  color: #b71c1c;
+}
+
+/* Offers Grid */
+.offers-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.offer-card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.offer-image {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 8px;
+}
+
+.offer-price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #d32f2f;
+  margin-top: 10px;
+}
+
+.offer-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #5a2d0c;
+  margin-top: 5px;
+}
+
+
+
+
+
+
