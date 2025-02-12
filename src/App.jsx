@@ -1,5 +1,4 @@
 import './App.css'
-import offers from "./offers"
 import Header from "./Header.jsx"
 import Welcome from "./Welcome.jsx"
 import Featured from "./Featured.jsx"
