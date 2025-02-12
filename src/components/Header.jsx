@@ -1,4 +1,3 @@
-import './App.css'
 
 function Header() {
 
@@ -8,7 +7,7 @@ function Header() {
       <header className="header">
         
         <div className="logo">
-          <img src="pictures/logo.png" alt="Burger King" />
+          <img src="../src/assets/pictures/logo.png" alt="Burger King" />
         </div>
   
   
