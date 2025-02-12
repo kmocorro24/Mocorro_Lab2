@@ -1,4 +1,5 @@
 import './App.css'
+import offers from "./offers"
 
 function App() {
   
@@ -125,9 +126,9 @@ function Offers() {
         <a href="#" className="view-all">View All</a>
       </div>
       <div className="offers-container">
-        <OfferCard image="pictures/offer1.jpg" alt="Thick-Cut Fries" />
-        <OfferCard image="pictures/offer2.jpg" alt="Chicken Nuggets" />
-        <OfferCard image="pictures/offer3.jpg" alt="Nutella Sundae" />
+        {offers.map((offer, index) => (
+          <OfferCard key ={index} {...offer} />
+        ))}
       </div>
     </div>
   );
@@ -140,6 +141,7 @@ function OfferCard(props) {
     </div>
   );
 }
+
 
 
 
